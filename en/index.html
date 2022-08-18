@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,7 +12,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Maixnor Books</title>
@@ -27,7 +27,7 @@
         <div
           class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
         >
-          <img class="w-32 h-32" src="logo.jpg" />
+          <img class="w-32 h-32" src="../logo.jpg" />
           ><button
             class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
             type="button"
@@ -60,7 +60,7 @@
                 ><i
                   class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg"
                 ></i
-                ><span class="lg:hidden inline-block ml-2">Teilen</span></a
+                ><span class="lg:hidden inline-block ml-2">Share</span></a
               >
             </li>
             <li class="flex items-center">
@@ -86,8 +86,8 @@
             <li class="flex items-center">
               <a
                 class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="/en/"
-                ><img src="gb.png" class="align-middle rounded-t-lg h-12"></a
+                href="/"
+                ><img src="../ger.png" class="align-middle rounded-t-lg h-12"></a
               >
             </li>
           </ul>
@@ -101,7 +101,7 @@
       >
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
-          style="background-image: url('./bookcase.jpg')"
+          style="background-image: url('../bookcase.jpg')"
         >
           <span
             id="blackOverlay"
@@ -112,13 +112,12 @@
           <div class="items-center flex flex-wrap">
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <h1 class="text-white font-semibold text-5xl">
-                Liebst du Buecher?
+                Do you love books?
               </h1>
               <p class="mt-4 text-lg text-gray-300">
-                Wir auch. Deswegen stellen wir die besten 
-                personalisierten Auswahlen an Buechern zur verfuegung.
+                We love books too. That is why we offer the greatest books.
                 </br>
-                Unsere Buechern sind nicht nur ausgewaehlt, sie sind zugeschnitten.
+                Our books are not just selected, they are tailored.
               </p>
             </div>
           </div>
@@ -154,12 +153,12 @@
                   <div
                     class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
                   >
-                    <i class="fas fa-award"></i>
+                    <i class="fas fa-book-bookmark"></i>
                   </div>
                   <h6 class="text-xl font-semibold">Beautiful</h6>
                   <p class="mt-2 mb-4 text-gray-600">
                     Our collections will spice up any bookcase, wether as an
-                    addition or the full content of any bookshelf.
+                    addition or the full content of any bookshelf of any size.
                   </p>
                 </div>
               </div>
@@ -172,13 +171,15 @@
                   <div
                     class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
                   >
-                    <i class="fas fa-crosshairs"></i>
+                    <i class="fas fa-scissors"></i>
                   </div>
                   <h6 class="text-xl font-semibold">Tailored</h6>
                   <p class="mt-2 mb-4 text-gray-600">
                     We compile a world of books into the most essential and
                     beautiful collection imaginable. We consult industry experts
                     on your field of interest.
+                    We can also consult you on the categories you need
+                    based on your business.
                   </p>
                 </div>
               </div>
@@ -191,12 +192,14 @@
                   <div
                     class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"
                   >
-                    <i class="fas fa-fingerprint"></i>
+                    <i class="fas fa-circle-check"></i>
                   </div>
                   <h6 class="text-xl font-semibold">Simple</h6>
                   <p class="mt-2 mb-4 text-gray-600">
                     We will take care of everything for you. We select, order,
                     and ship the books to you.
+                    We also provide support for our customers should
+                    there be any questions.
                   </p>
                 </div>
               </div>
@@ -207,7 +210,7 @@
               <div
                 class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100"
               >
-                <i class="fas fa-user-friends text-xl"></i>
+                <i class="fas fa-user-group text-xl"></i>
               </div>
               <h3 class="text-3xl mb-2 font-semibold leading-normal">
                 Working with us is a pleasure
@@ -226,9 +229,9 @@
                 and we will tailor our selection process based on your needs.
               </p>
               <a
-                href="/content/selection.html"
+                href="#getintouch"
                 class="text-white font-semibold px-6 py-3 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
-                >Order now!</a
+                >Get in touch!</a
               >
             </div>
             <div class="w-full md:w-4/12 px-4 mr-auto">
@@ -237,8 +240,8 @@
               >
                 <img
                   alt="..."
-                  src="./roads.jpg"
-                  class="w-full align-middle rounded-t-lg"
+                  src="../roads.jpg"
+                  class="align-middle rounded-t-lg w-full"
                 />
                 <blockquote class="relative p-8 mb-4">
                   <svg
@@ -291,7 +294,7 @@
               <img
                 alt="..."
                 class="max-w-full rounded-lg shadow-lg"
-                src="./book.jpg"
+                src="../book.jpg"
               />
             </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -312,8 +315,8 @@
                     <div class="flex items-center">
                       <div>
                         <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
-                          ><i class="fas fa-fingerprint"></i
+                          class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                          ><i class="fas fa-cubes"></i
                         ></span>
                       </div>
                       <div>
@@ -325,12 +328,12 @@
                     <div class="flex items-center">
                       <div>
                         <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
-                          ><i class="fab fa-html5"></i
+                          class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                          ><i class="fas fa-bullhorn"></i
                         ></span>
                       </div>
                       <div>
-                        <h4 class="text-gray-600">Greatest Looks</h4>
+                        <h4 class="text-gray-600">Greatest Impressions</h4>
                       </div>
                     </div>
                   </li>
@@ -338,8 +341,8 @@
                     <div class="flex items-center">
                       <div>
                         <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
-                          ><i class="far fa-paper-plane"></i
+                          class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                          ><i class="fas fa-brain"></i
                         ></span>
                       </div>
                       <div>
@@ -370,7 +373,7 @@
               <div class="px-6">
                 <img
                   alt="..."
-                  src="./assets/img/team-1-800x800.jpg"
+                  src="../assets/img/team-1-800x800.jpg"
                   class="shadow-lg rounded-full max-w-full mx-auto"
                   style="max-width: 120px;"
                 />
@@ -404,7 +407,7 @@
               <div class="px-6">
                 <img
                   alt="..."
-                  src="./assets/img/team-2-800x800.jpg"
+                  src="../assets/img/team-2-800x800.jpg"
                   class="shadow-lg rounded-full max-w-full mx-auto"
                   style="max-width: 120px;"
                 />
@@ -433,7 +436,7 @@
               <div class="px-6">
                 <img
                   alt="..."
-                  src="./assets/img/team-3-800x800.jpg"
+                  src="../assets/img/team-3-800x800.jpg"
                   class="shadow-lg rounded-full max-w-full mx-auto"
                   style="max-width: 120px;"
                 />
@@ -467,7 +470,7 @@
               <div class="px-6">
                 <img
                   alt="..."
-                  src="./assets/img/team-4-470x470.png"
+                  src="../assets/img/team-4-470x470.png"
                   class="shadow-lg rounded-full max-w-full mx-auto"
                   style="max-width: 120px;"
                 />
@@ -529,12 +532,12 @@
           <div class="flex flex-wrap text-center justify-center">
             <div class="w-full lg:w-6/12 px-4">
               <h2 class="text-4xl font-semibold text-white pt-10">
-                Build something
+                Books are important
               </h2>
               <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-                Put the potentially record low maximum sea ice extent tihs year
-                down to low ice. According to the National Oceanic and
-                Atmospheric Administration, Ted, Scambos.
+                Wether a library is part of your institution or not, books 
+                make a good impression. As the world becomes more digitized 
+                every day. As books vanish you can stand out with them.
               </p>
             </div>
           </div>
@@ -549,34 +552,33 @@
                 Excelent Services
               </h6>
               <p class="mt-2 mb-4 text-gray-500">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                We try our best to make the process as easy as possible.
+                Let us do the heavy lifting.
               </p>
             </div>
             <div class="w-full lg:w-3/12 px-4 text-center">
               <div
                 class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
               >
-                <i class="fas fa-poll text-xl"></i>
+                <i class="fas fa-book text-xl"></i>
               </div>
               <h5 class="text-xl mt-5 font-semibold text-white">
-                Grow your market
+                Interesting Titles
               </h5>
               <p class="mt-2 mb-4 text-gray-500">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                There will be something for everyone. Even frequent 
+                readers will find a nice read.
               </p>
             </div>
             <div class="w-full lg:w-3/12 px-4 text-center">
               <div
                 class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
               >
-                <i class="fas fa-lightbulb text-xl"></i>
+                <i class="fas fa-eye text-xl"></i>
               </div>
-              <h5 class="text-xl mt-5 font-semibold text-white">Launch time</h5>
+              <h5 class="text-xl mt-5 font-semibold text-white">Idea to Shelf</h5>
               <p class="mt-2 mb-4 text-gray-500">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                We will take care of everything. No need to worry about style or display.
               </p>
             </div>
           </div>
@@ -590,9 +592,10 @@
                 class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
               >
                 <div class="flex-auto p-5 lg:p-10">
-                  <h4 class="text-2xl font-semibold">Want to work with us?</h4>
+                  <h4 class="text-2xl font-semibold" id="getintouch">Want to work with us?</h4>
                   <p class="leading-relaxed mt-1 mb-4 text-gray-600">
-                    Complete this form and we will get back to you in 24 hours.
+                    If we could spark your interest or you have further questions 
+                    please to not hesitate to contact us, we are eager to help.
                   </p>
                   <div class="relative w-full mb-3 mt-8">
                     <label
@@ -671,31 +674,32 @@
           <div class="w-full lg:w-6/12 px-4">
             <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
             <h5 class="text-lg mt-0 mb-2 text-gray-700">
-              Find us on any of these platforms, we usually respond within 1-2
-              business days.
+              Find us on any of these platforms, we usually respond within 1
+              business day.
             </h5>
             <div class="mt-6">
-              <button
+              <a
+              href=""
                 class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
-                <i class="flex fab fa-twitter"></i></button
-              ><button
+                <i class="flex fab fa-twitter"></i></a
+              ><a
                 class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
-                <i class="flex fab fa-facebook-square"></i></button
-              ><button
+                <i class="flex fab fa-facebook-square"></i></a
+              ><a
                 class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
-                <i class="flex fab fa-dribbble"></i></button
-              ><button
+                <i class="flex fab fa-instagram"></i></a
+              ><a
                 class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
                 <i class="flex fab fa-github"></i>
-              </button>
+            </a>
             </div>
           </div>
           <div class="w-full lg:w-6/12 px-4">
@@ -709,46 +713,14 @@
                   <li>
                     <a
                       class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.creative-tim.com/presentation"
-                      >About Us</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://blog.creative-tim.com"
-                      >Blog</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                       href="https://www.github.com/creativetimofficial"
                       >Github</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.creative-tim.com/bootstrap-themes/free"
-                      >Free Products</a
                     >
                   </li>
                 </ul>
               </div>
               <div class="w-full lg:w-4/12 px-4 pt-4">
-                <span
-                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
-                  >Other Resources</span
-                >
                 <ul class="list-unstyled">
-                  <li>
-                    <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
-                      >MIT License</a
-                    >
-                  </li>
                   <li>
                     <a
                       class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
