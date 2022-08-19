@@ -31,71 +31,71 @@
           ><button
             class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
             type="button"
-            onclick="toggleNavbar('example-collapse-navbar')"
+            onclick="toggleNavbar('navbar')"
           >
             <i class="text-white fas fa-bars"></i>
           </button>
         </div>
         <div
-          class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
-          id="example-collapse-navbar"
+          class="text-white lg:flex flex-grow items-center bg-gray-800 lg:bg-transparent lg:shadow-none hidden"
+          id="navbar"
         >
-          <ul class="flex flex-col lg:flex-row list-none mr-auto">
-            <!-- <li class="flex items-center">
+          <!-- <ul class="flex flex-col lg:flex-row list-none mr-auto">
+            <li class="flex items-center">
               <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                class="text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing"
                 ><i
-                  class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"
+                  class="far fa-file-alt text-lg leading-lg mr-2"
                 ></i>
                 Docs</a
               >
-            </li> -->
-          </ul>
+            </li>
+          </ul> -->
           <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
             <li class="flex items-center">
               <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                class="text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 href="https://www.instagram.com/maixnorbooks/"
                 ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-instagram text-lg leading-lg"
+                  class="fab fa-instagram text-lg leading-lg"
                 ></i
                 ><span class="lg:hidden inline-block ml-2">Share</span></a
               >
             </li>
             <li class="flex items-center">
               <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                class="text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 href="https://www.facebook.com/maixnorbooks"
                 ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg"
+                  class="fab fa-facebook text-lg leading-lg"
                 ></i
                 ><span class="lg:hidden inline-block ml-2">Share</span></a
               >
             </li>
             <li class="flex items-center">
               <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                class="text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 href="https://twitter.com/maixnorbooks"
                 ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg"
+                  class="fab fa-twitter text-lg leading-lg"
                 ></i
                 ><span class="lg:hidden inline-block ml-2">Tweet</span></a
               >
             </li>
             <li class="flex items-center">
               <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                class="text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 href="https://github.com/maixnor/maixnor-web"
                 ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg"
+                  class="fab fa-github text-lg leading-lg"
                 ></i
                 ><span class="lg:hidden inline-block ml-2">Star</span></a
               >
             </li>
             <!-- <li class="flex items-center">
               <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                class="text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 href="/ger/"
                 ><img src="./ger.png" class="align-middle rounded-t-lg h-12"></a
               >
@@ -762,6 +762,8 @@
             </div>
           </div>
         </div>
+        <script>
+        </script>
         <hr class="my-6 border-gray-400" />
         <div
           class="flex flex-wrap items-center md:justify-between justify-center"
@@ -770,10 +772,16 @@
             <div class="text-sm text-gray-600 font-semibold py-1">
               Copyright © 2022 by
               <a
-                href="https://gray-moss-0be855b03.azurestaticapps.net"
-                class="text-gray-600 hover:text-gray-900"
+                href="https://github.com/maixnor"
+                class="text-blue-500 hover:text-gray-900"
                 >Maixnor</a
               >.
+              </br>
+              Deployed from commit 
+              <a class="text-blue-500" id="commit" href="#">{commit}</a>
+              via build 
+              <a class="text-blue-500" id="build" href="#">{build}</a>
+              .
             </div>
           </div>
         </div>
@@ -785,5 +793,22 @@
       document.getElementById(collapseID).classList.toggle("hidden");
       document.getElementById(collapseID).classList.toggle("block");
     }
+
+    // get current commit
+    fetch('https://api.github.com/repos/maixnor/maixnor-web/commits/main').then(response =>{
+      return response.json();
+    }).then(data =>{
+      document.getElementById('commit').setAttribute('href', data.html_url);
+      document.getElementById('commit').innerText = data.sha.substr(0, 6);
+    })
+    
+    // get current action
+    fetch('https://api.github.com/repos/maixnor/maixnor-web/actions/runs').then(response =>{
+      return response.json();
+    }).then(data =>{
+      document.getElementById('build').setAttribute('href', data.workflow_runs[0].html_url);
+      document.getElementById('build').innerText = data.workflow_runs[0].id;
+    })
+
   </script>
 </html>
