@@ -2,7 +2,7 @@
 # Welcome 
 
 Here you can find all the source code
-involved in bringing [maixnor.com](maixnor.com) to you.
+involved in bringing [maixnor.com](https://maixnor.com) to you.
 
 ### Issues
 
