@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./logo.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./logo.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Maixnor Books</title>
+  </head>
+  <body class="text-gray-900 antialiased">
+    <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3"
+    >
+      <div
+        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+      >
+        <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <img class="lg:w-44 lg:h-44 md:w-32 md:h-32 w-28 h-28 my-2 rounded-full" src="./logo.png" />
+          ><button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('navbar')"
+          >
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div
+          class="text-white lg:flex flex-grow items-center bg-gray-800 lg:bg-transparent lg:shadow-none hidden"
+          id="navbar"
+        >
+          <!-- <ul class="flex flex-col lg:flex-row list-none mr-auto">
+            <li class="flex items-center">
+              <a
+                class="text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing"
+                ><i
+                  class="far fa-file-alt text-3xl leading-lg mr-2"
+                ></i>
+                Docs</a
+              >
+            </li>
+          </ul> -->
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <li class="flex items-center">
+              <a
+                class="text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://www.instagram.com/maixnorbooks/"
+                ><i
+                  class="fab fa-instagram text-3xl leading-lg"
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Share</span></a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                class="text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://www.facebook.com/maixnorbooks"
+                ><i
+                  class="fab fa-facebook text-3xl leading-lg"
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Share</span></a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                class="text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://twitter.com/maixnorbooks"
+                ><i
+                  class="fab fa-twitter text-3xl leading-lg"
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Tweet</span></a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                class="text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://github.com/maixnor/maixnor-web"
+                ><i
+                  class="fab fa-github text-3xl leading-lg"
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Star</span></a
+              >
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div
+        class="relative pt-16 pb-32 flex content-center items-center justify-center"
+        style="min-height: 75vh"
+      >
+        <div
+          class="absolute top-0 w-full h-full bg-center bg-cover"
+          style="background-image: url('./bookcase.jpg')"
+        >
+          <span
+            id="blackOverlay"
+            class="w-full h-full absolute opacity-75 bg-black"
+          ></span>
+        </div>
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <h1 class="text-white font-semibold text-5xl">
+                Impressum
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+          style="height: 70px"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 5120 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-300 fill-current"
+              points="5120 0 5120 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+      </div>
+      <section class="relative py-20">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 5120 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-white fill-current"
+              points="5120 0 5120 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto px-4">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full md:w-4/12 ml-auto mr-auto px-4 pb-4">
+              <img
+                alt="..."
+                class="max-w-full rounded-lg shadow-lg"
+                src="./book.jpg"
+              />
+            </div>
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+              <div class="md:pr-12">
+                <h3 class="text-3xl font-semibold">Maixnor e.U.<br>Inhaber Benjamin Meixner</h3>
+                <p class="mt-4 text-lg leading-relaxed text-gray-600 break-normal">
+                  <span class="whitespace-pre-line">
+                  Eingetragenes Unternehmen
+
+                  Buchsommelier
+                  
+                  FN: 587772 x
+                  FB-Gericht: Wiener Neustadt
+                  Sitz: 2331 Vösendorf
+                  Fritz Schmeroldgasse 36 | Austria 
+                  Tel: +43 680 2456552 
+                  Fax: 2022....?
+                  Email: hello@maixnor.com
+
+                  Mitglied der WKO und WKNO
+
+                  Fachgruppe für Buch- und Medienwirtschaft
+
+                  Bezirkshauptmannschaft Mödling
+
+                  </span>
+                  Verbraucher haben die Möglichkeit, Beschwerden an die Online 
+                  Streitbeilegungsplattform der EU zu richten: 
+                  <br><a href="http://ec.europa.eu/odr" class="text-blue-500">http://ec.europa.eu/odr</a><br>
+                  Sie können allfällige Beschwerden auch an die oben angegebene Email-Adresse richten.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="relative bg-gray-300 pt-8 pb-6">
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 5120 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-gray-300 fill-current"
+            points="5120 0 5120 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+            <h5 class="text-lg mt-0 mb-2 text-gray-700">
+              Find us on any of these platforms, we usually respond within 1
+              business day.
+            </h5>
+            <div class="mt-6">
+              <a
+                href="https://www.instagram.com/maixnorbooks"
+                class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button"
+              >
+                <i class="flex fab fa-instagram"></i></a>
+              <a
+                href="https://www.facebook.com/maixnorbooks"
+                class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button"
+              >
+                <i class="flex fab fa-facebook-square"></i></a>
+              <a
+                href="https://twitter.com/maixnorbooks"
+                class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button">
+                <i class="flex fab fa-twitter"></i></a>
+              <a
+                href="https://github.com/maixnor/"
+                class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button">
+                <i class="flex fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="flex flex-wrap items-top mb-6">
+              <div class="w-full lg:w-4/12 px-4 ml-auto pt-4">
+                <span
+                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                  >Useful Links</span
+                >
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://www.github.com/maixnor/maixnor-web"
+                      >Github</a
+                    >
+                  </li>
+                  <!-- <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://creative-tim.com/terms"
+                      >Terms &amp; Conditions</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://creative-tim.com/privacy"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://creative-tim.com/contact-us"
+                      >Contact Us</a
+                    >
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+        </script>
+        <hr class="my-6 border-gray-400" />
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-gray-600 font-semibold py-1">
+              Copyright © 2022 by
+              <a
+                href="https://github.com/maixnor"
+                class="text-blue-500 hover:text-gray-900"
+                >Maixnor</a
+              >.
+              </br>
+              Deployed from commit 
+              <a class="text-blue-500" id="commit" href="#">{commit}</a>
+              via build 
+              <a class="text-blue-500" id="build" href="#">{build}</a>
+              .
+            </div>
+            <div class="text-sm text-gray-600 font-light">
+              <a href="/impressum" class="text-center">Impressum</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+
+    // get current commit
+    fetch('https://api.github.com/repos/maixnor/maixnor-web/commits/main').then(response =>{
+      return response.json();
+    }).then(data =>{
+      document.getElementById('commit').setAttribute('href', data.html_url);
+      document.getElementById('commit').innerText = data.sha.substr(0, 6);
+    })
+    
+    // get current action
+    fetch('https://api.github.com/repos/maixnor/maixnor-web/actions/runs').then(response =>{
+      return response.json();
+    }).then(data =>{
+      document.getElementById('build').setAttribute('href', data.workflow_runs[0].html_url);
+      document.getElementById('build').innerText = data.workflow_runs[0].id;
+    })
+
+  </script>
+</html>
