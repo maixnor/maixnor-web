@@ -19,7 +19,7 @@ jobs:
         with:
           submodules: true
       - name: Compile Tailwindcss into /dist/bundle.css
-        run: sh ./tailwindcss.sh
+        run: sh ./tailwind.sh
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
